@@ -1,0 +1,103 @@
+/*Design Color-scheme 2: Blue-Day Theme*/
+
+/*Should i leave margin at 0 0 0 0  or should i leave it
+  at 0 5px 0 5px???*/
+body {margin: 0 0 0 0;}
+
+
+
+/*Styling rules for the Header-Navigation Bar*/
+.header-nav {
+  background-color: rgba(39, 60, 108, 1);/*rgba(39, 60, 108, 0.8) #2E4272*/
+  color: rgba(255,255,255, 0.85);
+  padding: 10px 10px 10px 10px;
+  box-shadow: inset 3px 3px rgba(22,41,85, 0.30),
+              4px 4px rgba(6,21,57, 0.4);
+  position:absolute;
+  top:1%;
+  left:5px;
+  right:5px;
+  bottom:auto;
+  -webkit-border-radius:5px;
+  border-radius:3px;
+}
+.header-nav nav { float:right; }
+.header-nav #author-name {
+  font-style: oblique;
+  font-size: 150%;
+  font-weight: 900;
+}
+.header-nav #headline-summary {
+  font-size: 90%;
+}
+.header-nav nav a{
+    text-decoration: none;
+    padding-right: 20px;
+    color: rgba(255,255,255, 0.85);;
+    font-size: 105%;
+}
+.header-nav nav a:hover{ color: #b9c2d8; /*darkorange;#a7b3cf*/}
+
+
+
+/*Do i really need this? this invisible div block ensures that nothing is under the header-nav
+  bar, due to its position being absolute (everything else will be behind the nav bar and hence hidden) */
+.space{ height: 100px; width: 100%; background-color:white;/*grey*/}
+
+
+
+/*Styling rules for each section*/
+.section1,.section2,.section3,.section4{
+  text-align: center;
+  margin: 0 5px 0 5px;
+  /*background-color:grey; /*Debugging statement: shows how much space each section takes on layout*/
+}
+/*Styling Rules for the headings of each section*/
+.section1 #heading,.section2 #heading-skills,.section3 #heading-projects,.section4 #heading-experience{
+  text-shadow: 3px 2px 1px rgba(6,21,57, 0.5);
+  font-family: "Frutiger", "Gill Sans", "ITC Goudy Sans", "Mentor Sans";
+  font-weight: lighter;
+  font-size: 200%;
+  letter-spacing: 2px;
+}
+
+
+
+/*CSS for SVG graphics*/
+#Java, #HTML, #CSS{ opacity:0.75; }
+#SQL, #C{ opacity:0.95; }
+#JavaScript{ opacity:0.65; }
+#Java:hover, #JavaScript:hover{ opacity: 0.45; stroke-width:40px; }
+#SQL:hover, #C:hover{ opacity:0.55; stroke-width:40px; }
+#HTML:hover, #CSS:hover{ opacity: 0.65; stroke-width:40px; }
+
+#Java:hover, #SQL:hover, #C:hover, #JavaScript:hover, #HTML:hover, #CSS:hover{
+  -webkit-animation: expand 0.5s ease;
+  -moz-animation: expand 0.5s ease;
+  animation: expand 0.5s ease;
+    /*animation-name: exp;    animation-duration: 0.50s;    animation-timing-function: ease;*/
+}
+@keyframes expand {
+    0%{stroke-width:20px;}
+    50%{stroke-width:40px;}
+    75%{stroke-width:35px;}
+    100%{stroke-width:40px;}
+}
+
+
+
+/*Footer styling rules*/
+footer{
+  background-color: rgba(39, 60, 108, 1);/*rgba(39, 60, 108, 0.8) #2E4272*/
+  color: rgba(255,255,255, 0.8);
+  padding: 10px 10px 10px 10px;
+  box-shadow: inset 3px 3px rgba(22,41,85, 0.30),
+              4px 4px rgba(6,21,57, 0.4);
+  height: 50px;
+  margin: 20px 5px 10px 5px;
+  -webkit-border-radius:5px;
+  border-radius:3px;
+}
+footer .social-icons {text-align:center;}
+footer .social-icons a{ padding: 0 15px 0 15px;}
+footer .social-icons a:hover {opacity: 0.40;}
