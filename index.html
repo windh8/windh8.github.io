@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./css/day-blue.css">
+    <script src="./script/svg_functions.js"></script>
+  </head>
+  <body>
+    <header class="header-nav">
+      <div id="author-name">Heaten Mistry</div>
+      <nav>
+        <a href="#heading-skills">Skills</a>
+        <a href="#heading-projects">Projects</a>
+        <a href="#heading-experience">Experience</a>
+      </nav>
+      <div id="headline-summary">Work, Code, Eat, ...</div>
+      </header>
+
+      <div class="space"></div>
+
+      <div class="section1">
+        <span id="heading">About Me</span><br/>
+        <p>I am a Graduate of York University's Computer Science Program (BSc), where<br/>
+          i've gained knowledge and many skills that I can utilize for Software Programming.<br/>While there I have had experience with different editors, Operating Systems, and Languages.</p>
+      </div><br/><br/><br/><br/>
+
+      <div class="section2"><span id="heading-skills">Skills</span><br/><br/>
+        <svg width="500" height="500" viewbox="0,0,450,450">
+          <g class="skill-chart">
+            <circle id="skill_window" cx="220" cy="220" r="60" fill="rgba(0, 0, 0, 0.5)" />
+            <text id="skill-info" x="195" y="225" fill="white" style="font-size:25px">Skills</text>
+
+            <path id="Java" d="M149,197 A75,75 0 1,1 149,243" fill="none" stroke="orange" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="SQL" d="M150,149 A100,100 0 1,0 266,131" fill="none" stroke="lightgreen" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="C" d="M184,339 A125,125 0 1,1 346,220" fill="none" stroke="lightblue" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="JavaScript" d="M268,77 A150,150 0 1,0 364,174" fill="none" stroke="orangered" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="HTML" d="M67,304 A175,175 0 1,1 221,395" fill="none" stroke="BurlyWood" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+              <!--M26,200 A175,175 0 1,1 201,375
+                gold | rgb(255, 228, 77)-->
+            <!--Possible colors for path: BurlyWood, BlueViolet, Cyan, DarkMagenta, #1a1aff -->
+            <path id="CSS" d="M31,158 A200,200 0 1,1 59,338" fill="none" stroke="lightgrey" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+          </g>
+      </svg>
+      </div><br/><br/><br/><br/>
+
+      <div class="section3"><span id="heading-projects">Projects</span><br/><br/></div><br/><br/><br/><br/>
+
+      <div class="section4"><span id="heading-experience">Experience</span><br/><br/></div><br/><br/><br/><br/>
+
+      <footer>
+        <div class="social-icons">
+          <a href="mailto:windh800000000@gmail.com">
+            <img src="./img/mail-white-logo.png" alt="" width="50px" height="50px" />
+          </a>
+          <a href="http://www.linkedin.com/in/heaten-mistry" target="_blank">
+            <img src="./img/linkedin-white-logo.png" alt="" width="50px" height="50px" />
+          </a>
+          <a href="https://github.com/windh8" target="_blank">
+            <img src="./img/git-white-logo.png" alt="" width="50px" height="50px" />
+          </a>
+         
+          <a href="" target="_blank">
+            <img src="./img/pdf-white-logo.png" alt="" width="50px" height="50px" />
+          </a>
+         
+        </div>
+      </footer>
+  </body>
+</html>
