@@ -1,0 +1,20 @@
+/*CSS for SVG graphics*/
+#Java, #HTML, #CSS{ opacity:0.75; }
+#SQL, #C{ opacity:0.95; }
+#JavaScript{ opacity:0.65; }
+#Java:hover, #JavaScript:hover{ opacity: 0.45; stroke-width:40px; }
+#SQL:hover, #C:hover{ opacity:0.55; stroke-width:40px; }
+#HTML:hover, #CSS:hover{ opacity: 0.65; stroke-width:40px; }
+
+#Java:hover, #SQL:hover, #C:hover, #JavaScript:hover, #HTML:hover, #CSS:hover{
+  -webkit-animation: expand 0.5s ease;
+  -moz-animation: expand 0.5s ease;
+  animation: expand 0.5s ease;
+    /*animation-name: exp;    animation-duration: 0.50s;    animation-timing-function: ease;*/
+}
+@keyframes expand {
+    0%{stroke-width:20px;}
+    50%{stroke-width:40px;}
+    75%{stroke-width:35px;}
+    100%{stroke-width:40px;}
+}

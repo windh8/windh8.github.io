@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./css/day-blue.css">
+    <link id="day" rel="stylesheet" href="./css/day-blue2.css">
+    <link id="svg" rel="stylesheet" href="./css/svg.css">
+
     <script src="./script/svg_functions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+      $(function(){
+        $(document).scroll(function(){
+          $("#author-name").animate({top:"12px", left:"35px", fontSize:"25px" }, 200);
+          $("nav a").animate({top:"15px", left:"0px", fontSize:"20px" }, 175);
+          $("header").animate({height:"50px"}, 200);
+          $(".space").animate({height:"100px"}, 200);
+        });
+      });
+    </script>>
   </head>
   <body>
     <header class="header-nav">
-      <div id="author-name">Heaten Mistry</div>
+      <!--Put the below div element with my name into a span element? to see if we can get header text on same line and in centre of block (vertically)-->
+      <div id="picture"></div>
+      <span id="author-name">Heaten Mistry</span>
+      <!--div id="author-name">Heaten Mistry</div-->
       <nav>
-        <a href="#heading-skills">Skills</a>
+        <a href="./index.html">Home</a>
         <a href="#heading-projects">Projects</a>
         <a href="#heading-experience">Experience</a>
       </nav>
-      <div id="headline-summary">Work, Code, Eat, ...</div>
       </header>
 
       <div class="space"></div>
@@ -50,6 +65,14 @@
 
       <div class="section4"><span id="heading-experience">Experience</span><br/><br/></div><br/><br/><br/><br/>
 
+      <!--h1>Look at <a href="https://www.canva.com/learn/website-color-schemes/#image-20243">example 07</a>
+      </h1><p>could make the home page look like that then have menu at side
+        for different pages (projects/skill charts/etc ...)
+
+        also click to toggle skills charts:
+        charts originally circular buttons that when clicked will show chart and hide other skill buttons, when clicked again will disappear and show other skill buttons
+      </p-->
+
       <footer>
         <div class="social-icons">
           <a href="mailto:windh800000000@gmail.com">
@@ -65,7 +88,6 @@
           <a href="" target="_blank">
             <img src="./img/pdf-white-logo.png" alt="" width="50px" height="50px" />
           </a>
-         
         </div>
       </footer>
   </body>
