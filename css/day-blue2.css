@@ -47,13 +47,10 @@ body {margin: 0 0 0 0;}
 
 
 
-/*Do i really need this? this invisible div block ensures that nothing is under the header-nav
-  bar, due to its position being absolute (everything else will be behind the nav bar and hence hidden) */
+
 .space{ height: 150px; width: 100%; background-color:white;
     margin-bottom: 75px;
 }
-
-
 /*Styling rules for each section*/
 .section1,.section2,.section3,.section4{
   text-align: center;
@@ -68,7 +65,13 @@ body {margin: 0 0 0 0;}
   font-size: 200%;
   letter-spacing: 2px;
 }
-
+#picture{
+    height:130px;
+    width:130px;
+    border-radius:65px;
+    background-color:grey;
+    margin:auto;
+}
 
 
 
