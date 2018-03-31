@@ -18,3 +18,17 @@
     75%{stroke-width:35px;}
     100%{stroke-width:40px;}
 }
+
+
+
+
+
+/*New code to test for clickable skills button:
+ *
+ *Upon window load: only skills window will show (everything else in chart has 'display:none')
+ *Upon clicking skills window: full skills chart shows
+ *Upon clicking again (after first click): chart turns back to button (skills window)
+*/
+#Java, #SQL, #C, #JavaScript, #HTML, #CSS{
+	visibility:hidden;
+} 

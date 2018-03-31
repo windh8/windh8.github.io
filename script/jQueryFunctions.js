@@ -6,3 +6,5 @@ $(function(){
           $(".space").animate({height:"100px"}, 200);
         });
 });
+
+/*Modify this function to change the size of the space and first section on about page*/

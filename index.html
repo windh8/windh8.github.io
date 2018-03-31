@@ -6,9 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Mina|Montserrat|Roboto+Mono|Saira+Condensed|Slabo+27px" rel="stylesheet">
     <script src="./script/svg_functions.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="./script/jQueryFunctions.js">
-      
-    </script>>
+    <script src="./script/jQueryFunctions.js"></script>
+    <script src="./script/newFunction_clickable_skills.js"></script>
+    <script type="text/javascript">
+      $(function(){alert("Still under construction");});
+    </script>
   </head>
   <body>
     <header class="header-nav">
@@ -16,8 +18,7 @@
       <span id="author-name">Heaten Mistry</span>
       <!--div id="author-name">Heaten Mistry</div-->
       <nav>
-        <a href="./index.html">Home</a>
-        <a href="./skill.html">Skills</a>
+        <a href="./index.html">About</a>
         <a href="./projects.html">Projects</a>
         
       </nav>
@@ -27,14 +28,47 @@
 
       <div class="section1">
         <span id="heading">About Me</span><br/><br/>
-        <div id="picture"></div><br/>
-        <span>Who am I?</span>
-        <span><i> I'm a highly motivated individual who likes to code, read,<br/>
-                sleep, write and is eager to learn new things</i></span>
-      </div><br/><br/><br/><br/>
+        <div id="picture" style="display:none;"></div><br/>
 
+        <p>Who am I? <i> I am a highly motivated individual who enjoys programming, reading, and writing.</i>
+        <br/><br/>
+        What are some of my best characteristics?<br/>
+        I am: 
+        <ul>
+          <li>A quick learner</li>
+          <li>a team player (espcially when callaborating with others via a Project)</li>
+          <li>eager learn new things</li>
+          <li>adaptable to an ever-changing work environment</li>  
+        </ul>
+
+      </p>
+      </div>
       <div class="section2"><span id="heading-skills">Skills</span><br/><br/>
+        
+        <!--Test 1: make it clickable-->
         <svg width="500" height="500" viewbox="0,0,450,450">
+          <g class="skill-chart">
+            <g class="skill_window">
+              <circle id="skill_circle" cx="220" cy="220" r="60" fill="rgba(0, 0, 0, 0.5)" />
+              <text id="skill-info" x="195" y="225" fill="white" style="font-size:25px">Skills</text>
+            </g>
+
+            <path id="Java" d="M149,197 A75,75 0 1,1 149,243" fill="none" stroke="orange" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="SQL" d="M150,149 A100,100 0 1,0 266,131" fill="none" stroke="lightgreen" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="C" d="M184,339 A125,125 0 1,1 346,220" fill="none" stroke="lightblue" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="JavaScript" d="M268,77 A150,150 0 1,0 364,174" fill="none" stroke="orangered" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+
+            <path id="HTML" d="M67,304 A175,175 0 1,1 221,395" fill="none" stroke="BurlyWood" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+            <path id="CSS" d="M31,158 A200,200 0 1,1 59,338" fill="none" stroke="lightgrey" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
+          </g>
+      </svg>
+
+
+      <!--The code commented out below is the original final version of the svg chart (Everything works); uncomment it out below for a working svg chart-->
+        <!--svg width="500" height="500" viewbox="0,0,450,450">
           <g class="skill-chart">
             <circle id="skill_window" cx="220" cy="220" r="60" fill="rgba(0, 0, 0, 0.5)" />
             <text id="skill-info" x="195" y="225" fill="white" style="font-size:25px">Skills</text>
@@ -48,17 +82,16 @@
             <path id="JavaScript" d="M268,77 A150,150 0 1,0 364,174" fill="none" stroke="orangered" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
 
             <path id="HTML" d="M67,304 A175,175 0 1,1 221,395" fill="none" stroke="BurlyWood" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
-              <!--M26,200 A175,175 0 1,1 201,375
-                gold | rgb(255, 228, 77)-->
-            <!--Possible colors for path: BurlyWood, BlueViolet, Cyan, DarkMagenta, #1a1aff -->
             <path id="CSS" d="M31,158 A200,200 0 1,1 59,338" fill="none" stroke="lightgrey" stroke-width="20px" onmouseover="SVG_Mouse_On_Path(this)" onmouseout="SVG_Mouse_Off_Path(this)"/>
           </g>
-      </svg>
+      </svg-->
+
+
+
+
       </div><br/><br/><br/><br/>
 
       <!--div class="section3"><span id="heading-projects">Projects</span><br/><br/></div><br/><br/><br/><br/-->
-
-      <div class="section4"><span id="heading-experience">Experience</span><br/><br/></div><br/><br/><br/><br/>
 
       <!--h1>Look at <a href="https://www.canva.com/learn/website-color-schemes/#image-20243">example 07</a>
       </h1><p>could make the home page look like that then have menu at side
